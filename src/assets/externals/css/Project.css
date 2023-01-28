@@ -1,0 +1,89 @@
+/* Domain */
+#Domain {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(
+    -325deg,
+    rgba(31, 57, 97, 255) 80%,
+    rgba(0, 139, 226, 255)
+  );
+}
+
+#Domain .row .col .card {
+  border-radius: 20px;
+  background: rgb(114, 132, 170);
+  max-width: 100%;
+  max-height: 100%;
+  margin: 10%;
+  box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5),
+    5px 5px 10px rgba(255, 255, 255, 0.5);
+  transition: 0s;
+}
+#Domain .row .col .card:hover {
+  transform: translate(0, -5px);
+  box-shadow: 2px 2px 5px rgb(189, 210, 222);
+}
+
+#Domain .row .col .card .small-box .github-link {
+  background: black;
+  border-radius: 10px;
+  width: fit-content;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  transition: 0s;
+}
+#Domain .row .col .card .small-box .github-link:hover {
+  transform: translate(0, -5px);
+  box-shadow: 2px 2px 5px black;
+}
+
+/* footer */
+#footer {
+  color: #fff;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  height: 90px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10%;
+}
+
+#footer .leftfooter,
+.rightfooter {
+  display: flex;
+  flex-direction: column;
+}
+#footer .cont {
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+#footer .socialIcon {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.backbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.backbtn hr {
+  width: 90%;
+  border: 1px solid rgba(255, 255, 255);
+}
+.backbtn i {
+  transform: rotateX(180deg);
+  color: #fff;
+}

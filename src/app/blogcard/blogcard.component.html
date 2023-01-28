@@ -1,0 +1,60 @@
+<div class="card1" id="card">
+  <img class="card-img-top" [src]="i.imagePath" alt="" />
+
+  <div class="card-body text-light">
+    <figure>
+      <blockquote class="blockquote text-center">
+        <h4>{{ i.title }}</h4>
+      </blockquote>
+      <figcaption class="blockquote-footer text-light text-end">
+        {{ i.author }}
+      </figcaption>
+    </figure>
+
+    <p class="lead text-justify">
+      {{ i.content }}
+    </p>
+  </div>
+  <div class="card-footer">
+    <button
+      type="button"
+      class="btn btnn"
+      data-bs-toggle="modal"
+      [attr.data-bs-target]="'#' + modalId"
+    >
+      Read more >
+    </button>
+  </div>
+</div>
+<div
+  class="modal fade"
+  [id]="modalId"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog-centered modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-body text-center">
+        <img class="" [src]="i.imagePath" alt="" />
+
+        <figure>
+          <blockquote class="blockquote">
+            <h4>{{ i.title }}</h4>
+          </blockquote>
+          <figcaption class="blockquote-footer text-light">
+            {{ i.author }}
+          </figcaption>
+        </figure>
+        <div class="content p-5 text-justify">
+          {{ i.content }}
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

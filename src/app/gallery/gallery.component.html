@@ -1,0 +1,44 @@
+<div id="high"></div>
+<!-- For Smooth Scroll Up -->
+<div class="flex row">
+  <div class="col p-5 col-md-6 col-lg-6 col-12" *ngFor="let i of picture">
+    <div class="card2" id="card">
+      <img class="card-img-top" [src]="i.imagePath" alt="" />
+
+      <div class="card-body text-light">
+        <figure>
+          <blockquote class="blockquote mt-3 text-center">
+            <h4>{{ i.name.slice(0, -4) }}</h4>
+          </blockquote>
+        </figure>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- footer -->
+<section id="footer">
+  <div class="leftfooter p-2">
+    <span> Follow MLSA SREC </span>
+    <div class="socialIcon">
+      <i class="fa-brands fa-linkedin"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-twitter"></i>
+    </div>
+  </div>
+  <div class="rightfooter">
+    <div class="cont">
+      <span> Contact Us </span>
+      <span> Mlsa.srec@gmail.com </span>
+      <span> +91 52375 52638 </span>
+    </div>
+  </div>
+</section>
+
+<div class="backbtn mt-2">
+  <div style="cursor: default" class="btn text-light">Back to Top</div>
+  <a style="cursor: pointer" (click)="up()"
+    ><i class="fa-solid fa-circle-chevron-down mt-2 fa-xl"></i
+  ></a>
+  <hr />
+</div>

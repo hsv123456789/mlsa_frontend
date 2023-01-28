@@ -1,0 +1,218 @@
+/* Blog */
+
+#blog .container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.row {
+  position: relative;
+  width: 100%;
+}
+
+.text-center {
+  color: rgb(208, 205, 205);
+  text-shadow: 2px 2px 5px rgb(51, 92, 158);
+}
+.head-text {
+  margin: 50px;
+}
+.card1 {
+  align-items: center;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.7);
+  display: flex;
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 2em;
+  background: transparent;
+  /* background: linear-gradient(to right, rgba(255,255,255,.2), rgba(255,255,255,.2)); */
+}
+
+.card2 {
+  align-items: center;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.7);
+  display: flex;
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 2em;
+  background: linear-gradient(
+    to right,
+    rgba(248, 243, 243, 0.295),
+    rgba(47, 10, 232, 0.155)
+  );
+}
+
+.col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnn {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 10px;
+  margin-right: 10px;
+  float: right;
+  border-radius: 1rem;
+  padding: 7px;
+  text-align: center;
+  background: fixed;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.2),
+    rgba(0, 0, 0, 0.447)
+  );
+  border-color: rgb(210, 210, 210);
+  color: rgb(202, 198, 198);
+}
+
+.popup h2 {
+  font-size: 20px;
+  color: #fff;
+  height: auto;
+  align-items: center;
+  text-align: center;
+}
+
+.popup img {
+  margin-top: auto;
+  padding-top: 10px;
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+}
+.modal {
+  transition: 0.4s;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.modal-dialog-scrollable .modal-body {
+  overflow-x: hidden !important;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+.modal-content {
+  color: #fff;
+  box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.3);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content button {
+  padding: 10px 20px;
+  margin: 10px;
+  width: 200px;
+  background: #6fd646;
+  opacity: 0.9;
+  color: #fff;
+  border: 0;
+  outline: none;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(58, 55, 55, 0.2);
+}
+.open-popup {
+  position: absolute;
+  padding: 0%;
+  height: auto;
+  width: 80%;
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: 0.4s;
+}
+
+/* footer */
+#footer {
+  color: #fff;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  height: 90px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#footer .leftfooter,
+.rightfooter {
+  display: flex;
+  flex-direction: column;
+}
+#footer .cont {
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+#footer .socialIcon {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.backbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.backbtn hr {
+  width: 90%;
+  border: 1px solid rgba(255, 255, 255);
+}
+.backbtn i {
+  transform: rotateX(180deg);
+  color: #fff;
+}
+
+/* Navbar */
+.Navbar {
+  opacity: 0.9;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(
+    to right,
+    rgba(31, 57, 97, 0.2) 60%,
+    rgba(0, 139, 226, 1)
+  );
+}
+.navbar-brand img {
+  width: auto;
+  height: 50px;
+}
+.Navbar .active {
+  border-radius: 30%;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin: 0;
+  }
+}

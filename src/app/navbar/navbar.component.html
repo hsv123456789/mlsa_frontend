@@ -1,0 +1,67 @@
+<nav class="navbar sticky-top navbar-expand-md navbar-dark Navbar">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="../../assets/images/mlsa.PNG" />
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#collapseNavbar"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse" id="collapseNavbar">
+      <ul
+        class="navbar-nav ms-auto flex justify-content-center align-items-center"
+      >
+        <li
+          class="nav-item"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+        >
+          <a class="nav-link text-light" routerLink="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link text-light"
+            routerLinkActive="active"
+            routerLink="team"
+            >Team</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link text-light"
+            routerLinkActive="active"
+            routerLink="projects"
+            >Projects</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link text-light"
+            routerLinkActive="active"
+            routerLink="blogs"
+            >Blogs</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link text-light"
+            routerLink="gallery"
+            routerLinkActive="active"
+            >Gallery</a
+          >
+        </li>
+      </ul>
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="navbar-brand" href="#">
+            <img src="assets/images/MLSA_srec_logo.JPEG" />
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

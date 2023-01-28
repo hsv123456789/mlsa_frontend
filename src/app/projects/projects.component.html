@@ -1,0 +1,59 @@
+<section id="Domain">
+  <h1 class="m-5 display-4 text-light align-top" style="text-align: center">
+    Our Projects
+  </h1>
+
+  <div class="row">
+    <div class="col-md-4" *ngFor="let i of projects; index as j">
+      <div class="col col-12 p-3">
+        <div class="card p-2">
+          <h3 class="card-title text-justify pt-2 text-light align-self-start">
+            {{ i.projectName }}
+          </h3>
+          <h6 class="text-justify pt-2 text-light align-self-start">
+            {{ i.projectDomain }}
+          </h6>
+          <p>
+            {{ i.projectDescription }}
+          </p>
+          <div class="small-box">
+            <a href="#" target="_blank"
+              ><button class="github-link" type="button">
+                <div>
+                  <i class="fa-brands fa-github" style="color: white"></i>
+                  <span class="text-justify pt-2 text-light m-1">Explore</span>
+                </div>
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="footer">
+  <div class="leftfooter p-2">
+    <span> Follow MLSA SREC </span>
+    <div class="socialIcon">
+      <i class="fa-brands fa-linkedin"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-twitter"></i>
+    </div>
+  </div>
+  <div class="rightfooter">
+    <div class="cont">
+      <span> Contact Us </span>
+      <span> Mlsa.srec@gmail.com </span>
+      <span> +91 52375 52638 </span>
+    </div>
+  </div>
+</section>
+
+<div class="backbtn mt-2">
+  <div style="cursor: default" class="btn text-light">Back to Top</div>
+  <a style="cursor: pointer" (click)="up()"
+    ><i class="fa-solid fa-circle-chevron-down mt-2 fa-xl"></i
+  ></a>
+  <hr />
+</div>

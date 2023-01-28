@@ -1,0 +1,41 @@
+<!-- HEADING -->
+<div id="high" class="head-text">
+  <h2 class="text-center">Our Blogs</h2>
+</div>
+<!-- BLOG CONTENT -->
+<div id="blog" class="container">
+  <div class="row m-0">
+    <div
+      class="col p-5 col-md-6 col-lg-4 col-12 column"
+      *ngFor="let b of blog; index as imp"
+    >
+      <app-blogcard [i]="b" [num]="imp"></app-blogcard>
+    </div>
+  </div>
+</div>
+
+<section id="footer">
+  <div class="leftfooter p-2">
+    <span> Follow MLSA SREC </span>
+    <div class="socialIcon">
+      <i class="fa-brands fa-linkedin"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-twitter"></i>
+    </div>
+  </div>
+  <div class="rightfooter">
+    <div class="cont">
+      <span> Contact Us </span>
+      <span> Mlsa.srec@gmail.com </span>
+      <span> +91 52375 52638 </span>
+    </div>
+  </div>
+</section>
+
+<div class="backbtn mt-2">
+  <div style="cursor: default" class="btn text-light">Back to Top</div>
+  <a style="cursor: pointer" (click)="up()"
+    ><i class="fa-solid fa-circle-chevron-down mt-2 fa-xl"></i
+  ></a>
+  <hr />
+</div>

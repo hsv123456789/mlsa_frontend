@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Changa+One:ital@1&family=Fredoka+One&family=Luckiest+Guy&family=Monoton&family=Poppins&display=swap");
+
+@import url("./assets/externals/css/blog.css");
+@import url("./assets/externals/css/style.css");
+@import url("./assets/externals/css/Gallery.css");
+@import url("./assets/externals/css/Project.css");
+@import url("./assets/externals/css/Team.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  background: rgba(31, 57, 97, 255);
+  overflow-x: hidden;
+  max-width: 100%;
+}

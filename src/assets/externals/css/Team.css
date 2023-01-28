@@ -1,0 +1,209 @@
+/*smooth scroll*/
+html {
+  scroll-behavior: smooth;
+}
+
+.team-boxed {
+  color: white;
+  background: #1f3961;
+  background: linear-gradient(to right, #1f3961 48%, #008be2 100%);
+}
+
+/* CSS button */
+
+.btn-up {
+  align-items: center;
+  background-color: initial;
+  background-image: linear-gradient(
+    rgba(0, 233, 255, 0.84),
+    rgba(31, 57, 97, 0.84) 50%
+  );
+  border-radius: 15px;
+  border-width: 0;
+  box-shadow: rgb(254, 254, 255) 0 3px 2px, rgba(31, 57, 97, 0.4) 0 8px 12px;
+  color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  justify-content: center;
+  letter-spacing: 0.04em;
+  line-height: 16px;
+  margin: 0;
+  padding: 18px 18px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: rgba(255, 255, 255, 0.4) 0 0 4px,
+    rgba(255, 255, 255, 0.2) 0 0 12px, rgba(57, 31, 91, 0.6) 1px 1px 4px,
+    rgba(57, 31, 91, 0.32) 4px 4px 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+}
+
+.btn-up a {
+  color: white;
+  text-decoration: none;
+}
+
+.btn-up:hover {
+  background-image: linear-gradient(white, rgba(31, 57, 97, 0.4) 50%);
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+
+@media (min-width: 768px) {
+  .btn-up {
+    font-size: 21px;
+    padding: 18px 34px;
+  }
+}
+
+/*boxed elements*/
+
+.team-boxed p {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #eff9ff;
+  text-shadow: rgba(255, 255, 255, 1) 0px 0px 38px;
+}
+
+.team-boxed h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  margin-bottom: 40px;
+  padding-top: 40px;
+  font-size: 35px;
+  color: inherit;
+  text-shadow: rgba(255, 255, 255, 1) 0px 0px 38px;
+}
+
+@media (max-width: 767px) {
+  .team-boxed h2 {
+    margin-bottom: 25px;
+    padding-top: 25px;
+    font-size: 24px;
+  }
+}
+
+.team-boxed .intro {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.team-boxed .intro p {
+  margin-bottom: 0;
+}
+
+.team-boxed .people {
+  padding: 50px 0;
+}
+
+.team-boxed .item {
+  text-align: center;
+}
+.team-boxed .item img {
+  max-width: 160px;
+}
+
+.team-boxed .social {
+  font-size: 18px;
+  color: #fbfdff;
+}
+
+.team-boxed .social a {
+  color: inherit;
+  margin: 0 10px;
+  display: inline-block;
+  opacity: 0.7;
+}
+
+.team-boxed .social a:hover {
+  opacity: 1;
+}
+
+/*navbar*/
+
+.team-boxed .navbar {
+  font-family: "Poppins", sans-serif;
+  background-color: rgba(31, 57, 97, 0.5);
+}
+
+/*cards*/
+
+.team-boxed .card {
+  text-align: center;
+  padding: 0px;
+  margin-bottom: 30px;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.28);
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(0.3px);
+  -webkit-backdrop-filter: blur(0.3px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.team-boxed .card .card {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.28);
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(0.3px);
+  -webkit-backdrop-filter: blur(0.3px);
+  border: 0px solid rgba(255, 255, 255, 0.3);
+  padding: 10px;
+}
+
+.team-boxed .card .card .card {
+  border: 0px;
+  margin: 10px;
+  background: #00e9ff;
+  background: radial-gradient(
+    ellipse farthest-side at top center,
+    #00e9ff 8%,
+    #008be2 50%,
+    #1f3961 86%
+  );
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+.team-boxed .card .card .box .rounded-circle {
+  position: relative;
+  top: 20px;
+  border: 6px solid rgba(255, 255, 255, 0.3);
+}
+
+.team-boxed .name {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  margin-top: 28px;
+  margin-bottom: 8px;
+  color: black;
+}
+
+.team-boxed .title {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #ffffff;
+  letter-spacing: 2px;
+  font-size: 13px;
+}
+
+.team-boxed .social a {
+  color: inherit;
+  margin: 0 10px;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.team-boxed .social a:hover {
+  opacity: 1;
+  color: #00e9ff;
+}
